@@ -68,7 +68,7 @@ section{
 }
 
 .App{
-  padding: 3rem;
+  padding: 3rem 5rem;
   max-width: 1150px;
   margin: 0 auto;
 
@@ -104,8 +104,10 @@ section{
 
 .contact{
   display: flex;
+  text-decoration: none;
 }
 
 .work {
   margin-bottom: 0.5rem;
 }
+

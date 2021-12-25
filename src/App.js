@@ -7,7 +7,7 @@ const url = "https://en.wikipedia.org/wiki/Lil_Peep";
 const Link = ({work}) => {
 return(
   <p className='work'>
-    <a href={work.url} className='work_link'>
+    <a href={work.url} className='work link'>
       {work.title}
     </a> 
     &nbsp;&nbsp; ({work.date})
@@ -23,16 +23,16 @@ function App() {
       <div className="col one"> 
         <img src={m} className="self" alt="maddy"/>
         <h3 className="contact"> 
-        <a href={url} className='conact_link'>
-          <b>➀</b> LinkedIn 
+        <a href={url} className='contact link'>
+          <b>➀</b>&nbsp;LinkedIn 
         </a> 
-        &nbsp;/ 
-        <a href={url} className='contact_link'>
-          &nbsp;<b>➁</b> Resume 
+        &nbsp;/&nbsp; 
+        <a href={url} className='contact link'>
+          &nbsp;<b>➁</b>&nbsp;Resume 
         </a> 
-        &nbsp;/
-        <a href={url} className='contact_link'>
-          &nbsp;<b>➂</b> Email
+        &nbsp;/&nbsp;
+        <a href={url} className='contact link'>
+          &nbsp;<b>➂</b>&nbsp;Email
         </a>
       </h3>
       </div>
