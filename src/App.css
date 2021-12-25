@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Gentium Book Basic';
+  src: url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&display=swap'),
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face{
+  font-family: "Atlas-Grotesk";
+  src: url("./assets/Atlas-Grotesk.otf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
+body{
   min-height: 100vh;
+  background: var(--bg);
+  font-family: "Atlas-Grotesk", sans-serif;
+  color: var(--text);
+}
+
+:root{
+  --bg: #fffdfa;
+  --text: #331006;
+  --link: #843823;
+  --highlight: #CE540F;
+}
+
+p{
+  font-size: 80%;
+  line-height: 150%;
+}
+
+a{
+  color:var(--link);
+  background: transparent;
+  transition: all .7s;
+  cursor: pointer;
+}
+
+a:hover{
+  color:var(--bg);
+  background: var(--link);
+}
+
+figcaption {
+  font-family: "Gentium Book Basic", serif;
+  font-size: xx-small;
+}
+
+h3{
+  color: var(--link);
+  font-size: 100%;
+  /* font-weight: normal; */
+}
+
+h4{
+  text-transform: uppercase;
+  /* font-weight: normal; */
+  font-size: 75%;
+  padding-bottom: 1rem;
+}
+
+section{
+  padding-bottom:3rem;
+}
+
+.App{
+  padding: 3rem;
+  max-width: 1150px;
+  margin: 0 auto;
+
+}
+
+.col_wrapper{
+  display: flex;
+  gap:5rem;
+}
+
+.col{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-family: "Gentium Book Basic", serif;
+  font-size:275%;
+  color: var(--text);
+  -webkit-text-fill-color: var(--bg);
+  -webkit-text-stroke-width: 1.3px;
+  line-height: normal;
+  padding-bottom: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.self{
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  max-width: 20rem;
+  cursor:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="30" style="font-size: 20px;"><text y="15">☭</text></svg>'), auto;
+}
+
+.contact{
+  display: flex;
+}
+
+.work {
+  margin-bottom: 0.5rem;
 }
