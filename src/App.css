@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Gentium Book Basic';
-  src: url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&display=swap'),
+  src: url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400&display=swap'),
 }
 
 @font-face{
@@ -16,48 +16,55 @@
 
 body{
   min-height: 100vh;
-  background: var(--bg);
   font-family: "Atlas-Grotesk", sans-serif;
   color: var(--text);
+  background: white;
+ /* background: radial-gradient(121.13% 190.44% at 4.89% -17.91%, rgba(255, 251, 248, 0) 16.67%, rgba(235, 176, 134, 0.124) 58.33%, rgba(255, 251, 248, 0) 100%), linear-gradient(60.85deg, rgba(123, 52, 41, 0.06) 36.54%, rgba(255, 235, 206, 0.034) 66.75%), #FFFDFA; */
 }
 
 :root{
-  --bg: #fffdfa;
+  --bg: white;
   --text: #331006;
-  --link: #843823;
+  --accent: #0f0be0;
   --highlight: #CE540F;
 }
 
+::selection{
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
 p{
-  font-size: 80%;
+  font-size: 80%; 
   line-height: 150%;
 }
 
 a{
-  color:var(--link);
+  color:var(--accent);
   background: transparent;
-  transition: all .7s;
+  transition: all .5s;
   cursor: pointer;
 }
 
+.contact.link:hover,
 a:hover{
   color:var(--bg);
-  background: var(--link);
+  background: var(--accent);
 }
 
 figcaption {
   font-family: "Gentium Book Basic", serif;
-  font-size: xx-small;
 }
 
 h3{
-  color: var(--link);
   font-size: 100%;
   /* font-weight: normal; */
 }
 
 h4{
   text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.75px;
   /* font-weight: normal; */
   font-size: 75%;
   padding-bottom: 1rem;
@@ -68,10 +75,9 @@ section{
 }
 
 .App{
-  padding: 3rem 5rem;
+  padding: 5rem;
   max-width: 1150px;
   margin: 0 auto;
-
 }
 
 .col_wrapper{
@@ -87,27 +93,64 @@ section{
 
 .title {
   font-family: "Gentium Book Basic", serif;
-  font-size:275%;
-  color: var(--text);
-  -webkit-text-fill-color: var(--bg);
+  font-size: 290%;
+  color: var(--accent);
+  -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1.3px;
   line-height: normal;
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
 }
 
 .self{
   padding-top: 2rem;
   padding-bottom: 1rem;
   max-width: 20rem;
-  cursor:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="30" style="font-size: 20px;"><text y="15">☭</text></svg>'), auto;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
 }
 
 .contact{
   display: flex;
+  flex-direction: column;
   text-decoration: none;
 }
 
-.work {
-  margin-bottom: 0.5rem;
+.contact_link{
+  align-self: flex-start;
+  font-family: "Gentium Book Basic", serif;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 200%;
+  color: var(--accent);
+  background: transparent;
+  text-decoration: none;
+  padding-right: 0.5rem;
+ /* -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px; */
 }
 
+.num{
+  font-style: normal;
+  font-family: "Atlas-Grotesk";
+}
+
+.work{
+  margin-bottom: 0.35rem;
+/*  font-family: "Gentium Book Basic", serif; */
+  font-weight: 700;
+  font-size: 100%;
+}
+
+.gemini{
+  padding-bottom: 1rem;
+}
+
+svg {
+  height: 5rem;
+  stroke-width: 3px;
+  font-size: 5rem;
+}
