@@ -51,7 +51,7 @@ const About = () => {
 const Intro = ({img, setImg}) => {
   return(
     <section>
-        {/* <Gemini img={img}/> */}
+        <Gemini img={img}/>
         <p className="title" 
         // onMouseEnter={() => setImg(true)}
         // onMouseLeave={() => setImg(false)}
@@ -83,10 +83,9 @@ function App() {
         <About/>
         <Work/>
         <Contact/>
+        <img src={m} className="self" alt="maddy"/>
       </div>
       <div className="col two">
-      <img src={m} className="self" alt="maddy"/>
-
       </div>
       </div>
     </div>
