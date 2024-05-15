@@ -4,21 +4,13 @@ import { works } from './assets/works.js';
 import { useState } from 'react';
 import { Gemini } from './assets/Gemini';
 
-const url = "https://en.wikipedia.org/wiki/Lil_Peep";
-
 const Contact = () => {
   return(
   <section> 
       <h4>Contact</h4>
       <div className='contact'>
-        <a href={url} className='contact_link'>
-            <b className='num'>➀</b>&nbsp;LinkedIn 
-          </a>
-          <a href={url} className='contact_link'>
-            <b className='num'>➁</b>&nbsp;Resume 
-          </a> 
-          <a href={url} className='contact_link'>
-            <b className='num'>➂</b>&nbsp;Email
+        <a href="mamcfarland23@gmail.com" className='contact_link'>
+          mamcfarland23@gmail.com
           </a>
       </div>
       </section>
@@ -51,7 +43,7 @@ const About = () => {
   return(
     <section>
       <h4>About</h4>
-      <p>Lil Peep's first live performance took place on February 12, 2016 in Tucson, AZ as a member of Schemaposse. Later that year Lil Peep toured briefly with Fat Nick, Mikey The Magician, and SmokePurpp. In the spring of 2017, Lil Peep embarked on his first solo tour, performing to packed venues in three Russian cities, making his way across western Europe, and then across the United states.</p>
+      <p>Madeline McFarland is a writer living in New York. She graduated from New York University’s MFA program in 2023 and from Williams College in 2018. She is currently working on a collection of short stories and a novel.</p>
     </section>
   )
 }
@@ -59,24 +51,22 @@ const About = () => {
 const Intro = ({img, setImg}) => {
   return(
     <section>
-        <Gemini img={img}/>
+        {/* <Gemini img={img}/> */}
         <p className="title" 
-        onMouseEnter={() => setImg(true)}
-        onMouseLeave={() => setImg(false)}
+        // onMouseEnter={() => setImg(true)}
+        // onMouseLeave={() => setImg(false)}
         >
             Madeline McFarland
         </p>
         <div> {!img 
         ? <figcaption>
-          student + writer in New York, NY
+          writer in New York, NY
           </figcaption>
         :  <figcaption>
-          <span style={{textDecoration:"line-through"}}>student + writer in New York, NY</span>
+          <span style={{textDecoration:"line-through"}}>writer in New York, NY</span>
           &nbsp; gemini
         </figcaption>
         }
-          
-
         </div>
       </section>
   )
@@ -95,7 +85,8 @@ function App() {
         <Contact/>
       </div>
       <div className="col two">
-       {img && <img src={m} className="self" alt="maddy"/>}
+      <img src={m} className="self" alt="maddy"/>
+
       </div>
       </div>
     </div>
@@ -103,13 +94,3 @@ function App() {
 }
 
 export default App;
-
-//       <figcaption>b. 1995, gemini</figcaption>
-
-/*
-const Contact = () => {
-  
-}
-*/
-
-//        

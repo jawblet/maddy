@@ -1,27 +1,12 @@
 export const works = [
     { 
-        title: "Come Over When You're Sober, Pt. 1",
-        date: "2017",
-        url: "https://en.wikipedia.org/wiki/Lil_Peep" 
+        title: "“In Session,” KGB",
+        date: "2023",
+        url: "https://kgbbarlit.com/fiction/session" 
     },
     { 
-        title: "Come Over When You're Sober, Pt. 1",
-        date: "2017",
-        url: "https://en.wikipedia.org/wiki/Lil_Peep" 
-    },
-    { 
-        title: "Come Over When You're Sober, Pt. 1",
-        date: "2017",
-        url: "https://en.wikipedia.org/wiki/Lil_Peep" 
-    },
-    { 
-        title: "Come Over When You're Sober, Pt. 1",
-        date: "2017",
-        url: "https://en.wikipedia.org/wiki/Lil_Peep" 
-    },
-    { 
-        title: "Come Over When You're Sober, Pt. 1",
-        date: "2017",
-        url: "https://en.wikipedia.org/wiki/Lil_Peep" 
+        title: "“Self-Conscious,” Regarding Ingres: Fourteen Short Stories",
+        date: "2023",
+        url: "https://www.rizzoliusa.com/book/9780847899128/" 
     }
 ];
