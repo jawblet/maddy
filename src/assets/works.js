@@ -10,8 +10,8 @@ export const works = [
         url: "https://www.rizzoliusa.com/book/9780847899128/" 
     },
     { 
-        title: "“Forthcoming”, Gully Magazine",
-        date: "Forthcoming",
+        title: "“Accounting”, Gully Magazine",
+        date: "Forthcoming, 2024",
         url: "https://gully-mag.com/" 
     }
 ];
