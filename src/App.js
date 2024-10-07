@@ -31,7 +31,7 @@ return(
 const Work = () => {
   return(
     <section>
-    <h4>Selected work</h4>
+    <h4>Work and awards</h4>
     {works.map((work, i) => {
         return <Link key={i} work={work}/>
       })}
