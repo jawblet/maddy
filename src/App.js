@@ -53,8 +53,8 @@ const Intro = ({img, setImg}) => {
     <section>
         <Gemini img={img}/>
         <p className="title" 
-        // onMouseEnter={() => setImg(true)}
-        // onMouseLeave={() => setImg(false)}
+        onMouseEnter={() => setImg(true)}
+        onMouseLeave={() => setImg(false)}
         >
             Madeline McFarland
         </p>
