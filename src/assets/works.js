@@ -1,6 +1,6 @@
 export const works = [
     {
-        title: "“Transubstantiation”, The Cincinnati Review Robert and Adele Schiff Award, Honorable Mention for Fiction",
+        title: "“Transubstantiation,” The Cincinnati Review Robert and Adele Schiff Award, Honorable Mention for Fiction",
         date: "2024",
         url: "https://www.cincinnatireview.com/contests/announcing-our-2024-contest-winners/"
     },
