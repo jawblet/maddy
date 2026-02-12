@@ -1,6 +1,6 @@
 export const works = [
     {
-        title: "Flare,” Vol. 1 Brooklyn",
+        title: "“Flare,” Vol. 1 Brooklyn",
         date: "2026",
         url: "https://www.vol1brooklyn.com/2026/02/01/sunday-stories-flare/"
     },
